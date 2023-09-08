@@ -375,8 +375,11 @@ h6 {
     margin-bottom: 2.1875rem;
   }
 }
-.join-club__container-text:not(:last-child) {
+.join-club__block-text:not(:last-child) {
   margin-bottom: 2.625rem;
+}
+.join-club__text {
+  line-height: 1.425;
 }
 .join-club__price {
   margin-left: 0.1875rem;
@@ -387,23 +390,50 @@ h6 {
 }
 .join-club__new-price {
   border-radius: 500px;
-  padding: 0.5rem 0.625rem;
-  font-size: 1.5rem;
+  padding: 0.3125rem 0.625rem;
   line-height: 1.2;
   background: radial-gradient(100% 100% at 100% 0%, #e0b8ff 0%, #b6b9ff 100%);
+}
+@media (min-width: 61em) {
+  .join-club__new-price {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 61em) {
+  .join-club__new-price {
+    font-size: clamp( 1.125rem , 0.9420731707rem  +  0.9146341463vw , 1.5rem );
+  }
+}
+@media (max-width: 20em) {
+  .join-club__new-price {
+    font-size: 1.125rem;
+  }
 }
 @media (max-width: 47.99875em) {
   .join-club__new-price {
     padding: 0.3125rem 0.5rem;
-    font-size: 1.125rem;
     line-height: 1.2;
   }
 }
 .join-club__old-price {
-  padding: 0.6875rem 0.625rem;
+  padding: 0.3125rem 0.625rem;
   color: #808080;
-  font-size: 1rem;
   line-height: 1.2;
+}
+@media (min-width: 61em) {
+  .join-club__old-price {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 61em) {
+  .join-club__old-price {
+    font-size: clamp( 0.8125rem , 0.7210365854rem  +  0.4573170732vw , 1rem );
+  }
+}
+@media (max-width: 20em) {
+  .join-club__old-price {
+    font-size: 0.8125rem;
+  }
 }
 @media (max-width: 47.99875em) {
   .join-club__old-price {
